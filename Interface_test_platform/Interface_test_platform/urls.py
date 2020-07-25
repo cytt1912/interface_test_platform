@@ -15,12 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
 from Platform.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('welcome/', welcome),
     path('case_list/', caseList),
-    path('home/', home), #进入首页
-    path("^child/(?P<eid>.+)/$", child),  # 返回子页面
+    url(r'^home/$', home),  # 进入首页
+    url(r"^child/(?P<eid>.+)/(?P<oid>.*)/$", child),
+
+    # url(r'^welcome/$',welcome) , #获取菜单
+    # url(r'^home/$', home),  # 进入首页
+    # url(r"^child/(?P<eid>.+)/(?P<oid>.*)/$",child),  # 返回子页面
+
 ]
