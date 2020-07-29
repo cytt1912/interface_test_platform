@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3c4ca94-eb9e-4afd-a65d-c05cfa31e8eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Interface_test_platform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Interface_test_platform.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface_test_platform/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface_test_platform/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platform/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Platform/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platform/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/Platform/templates/welcome.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +32,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
-    <option name="width" value="1387" />
-    <option name="height" value="878" />
   </component>
   <component name="ProjectId" id="1fGMPIMk89PADHyQm39bZunjPHp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -119,7 +111,7 @@
       <workItem from="1595254056974" duration="4360000" />
       <workItem from="1595516307438" duration="4795000" />
       <workItem from="1595681845877" duration="7148000" />
-      <workItem from="1595839952879" duration="354000" />
+      <workItem from="1595839952879" duration="5701000" />
     </task>
     <servers />
   </component>
