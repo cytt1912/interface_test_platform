@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a3c4ca94-eb9e-4afd-a65d-c05cfa31e8eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platform/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/Platform/templates/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface_test_platform/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface_test_platform/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platform/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Platform/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,17 +39,18 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Platform/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\cyt\interfacetest\interface_test_platform\Interface_test_platform\Platform\static" />
+      <recent name="D:\code\github_cyt\python\Interface_test_platform\Platform\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\code\github_cyt\python\Interface_test_platform\Platform\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\github_cyt\python\Interface_test_platform\Platform\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -111,7 +113,7 @@
       <workItem from="1595254056974" duration="4360000" />
       <workItem from="1595516307438" duration="4795000" />
       <workItem from="1595681845877" duration="7148000" />
-      <workItem from="1595839952879" duration="5701000" />
+      <workItem from="1595839952879" duration="10328000" />
     </task>
     <servers />
   </component>

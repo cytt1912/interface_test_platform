@@ -21,6 +21,7 @@ from Platform.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('welcome/', welcome),
+    path('login/', login),
     path('case_list/', caseList),
     url(r'^home/$', home),  # 进入首页
     url(r"^child/(?P<eid>.+)/(?P<oid>.*)/$", child),
