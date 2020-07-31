@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 
@@ -26,4 +26,15 @@ def home(request):
 
 def child(request,eid,oid):
     return render(request,eid)
+
+def login_action(request):
+    uname = request.GET['username']
+    pword = request.GET['password']
+    from django.contrib import auth
+    user = auth.authenticate(username=uname,password=pword)
+    if user is not None:
+        return HttpResponseRedirect("/home/")
+    else:
+        return HttpResponse('用户名或者密码错误！')
+
 

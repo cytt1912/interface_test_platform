@@ -19,6 +19,7 @@
             height: 30px;
         }
     </style>
+    <script src="/static/201908059658/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div style="margin-left: -webkit-calc(50% - 150px);
@@ -29,17 +30,30 @@
         <br><br>
         <span>欢迎使用</span>
         <br><br>
-            <input type="text" class="ys_input" placeholder="用户名">
+            <input id="username" type="text" class="ys_input" placeholder="用户名">
             <br><br>
-            <input type="text" class="ys_input" placeholder="密码">
+            <input id="password" type="text" class="ys_input" placeholder="密码">
             <br><br>
-            <button style="width: 24%;height: 30px;border-radius: 6px;background-color: #398e73;color: white;font-size: large">登 陆</button>
+            <button onclick="login()" style="width: 24%;height: 30px;border-radius: 6px;background-color: #398e73;color: white;font-size: large">登 陆</button>
         <br><br>
         若首次登陆,请点击 <a href="">注册账号</a>
         <br><br>
 
 
     </div>
+
+<script>
+    function login() {
+        username = document.getElementById('username').value;
+        password = document.getElementById('password').value;
+        $.get("/login_action/",{
+            "username":username,
+            "password":password
+        },function (ret) {
+            alert('您输入的用户名或密码错误！')
+        })
+    }
+</script>
 
 </body>
 </html>
