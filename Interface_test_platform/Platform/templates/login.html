@@ -32,17 +32,19 @@
         <br><br>
             <input id="username" type="text" class="ys_input" placeholder="用户名">
             <br><br>
-            <input id="password" type="text" class="ys_input" placeholder="密码">
+            <input id="password" type="password" class="ys_input" placeholder="密码">
             <br><br>
             <button onclick="login()" style="width: 24%;height: 30px;border-radius: 6px;background-color: #398e73;color: white;font-size: large">登 陆</button>
         <br><br>
-        若首次登陆,请点击 <a href="">注册账号</a>
+        <span>若首次登陆,请点击 <a href="javascript:register()">注册账号</a></span>
         <br><br>
 
 
     </div>
 
 <script>
+    //如何把前端信息传给后端？
+    //向后端发送HTTP请求
     function login() {
         username = document.getElementById('username').value;
         password = document.getElementById('password').value;
@@ -50,8 +52,28 @@
             "username":username,
             "password":password
         },function (ret) {
-            alert('您输入的用户名或密码错误！')
+            if(ret == '成功'){
+                document.location.href = '/home/'
+            }
+            else {
+                alert('您输入的用户名或密码错误！')
+            }
+
         })
+    }
+
+    //注册
+    function register() {
+        username = document.getElementById('username').value;
+        password = document.getElementById('password').value;
+        $.get("/register/",{
+            "username":username,
+            "password":password
+        },function (ret) {
+            alert(ret)
+        })
+
+
     }
 </script>
 

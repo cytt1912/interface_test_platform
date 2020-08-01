@@ -26,6 +26,8 @@ urlpatterns = [
     path('case_list/', caseList),
     url(r'^home/$', home),  # 进入首页
     url(r"^child/(?P<eid>.+)/(?P<oid>.*)/$", child),
+    path('register/',register_login),
+    url('account/login/',login)  #非登录状态需要先进入登录页面
 
 
 ]
