@@ -67,5 +67,10 @@ def register_login(request):
     except:
         return HttpResponse("注册失败！用户名已经存在了~")
 
+#退出登录
+def logout(request):
+    from django.contrib import auth
+    auth.logout(request)
+    return HttpResponseRedirect('/login/')
 
 
