@@ -33,10 +33,10 @@
 
     <script>
         function pei() {
-            $get("/pei/",{
+            $.get("/pei/",{
                 "tc_text":document.getElementById("tucao_input").value
             },function (ret) {
-                alert("吐槽成功！")
+                alert('吐槽成功！')
                 
             })
 

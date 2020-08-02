@@ -5,6 +5,9 @@ from django.shortcuts import render
 
 # import
 # Create your views here.
+from Platform.models import *
+
+
 
 @login_required
 def welcome(request):
@@ -22,7 +25,6 @@ def caseList(request):
 
 @login_required
 def home(request):
-    print("home")
     return render(request, 'welcome.html', {"whichHTML": "home.html", "oid": ""})
 
 def child(request,eid,oid):
@@ -75,7 +77,10 @@ def logout(request):
 
 #吐槽
 def pei(request):
-    tc_text= request.GET('tc_text')
-    return HttpResponse()
+    tc_text= request.GET['tc_text']
+    print(tc_text)
+    print('pei')
+    DBComments.objects.create(user = request.user.username,text=tc_text)
+    return HttpResponse('')
 
 
