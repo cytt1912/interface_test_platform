@@ -5,25 +5,45 @@
     <title>自动化测试平台</title>
 </head>
 
-<body style="text-align: center">
+<body >
     <div style="text-align: center">
-        <br><br><br><br><br>
+        <br><br><br><br>
         <h1>欢迎使用   接口自动化测试平台</h1>
-    <h3>welcome to ApiTest</h3>
-    <br><br>
-    <div style="border:2px solid black;width:200px;text-align: left;
-    margin-left: -webkit-calc(50% - 100px);padding-left: 10px">
-        <h2>如何使用：</h2>
-        1.打开左侧菜单<br>
-        2.找到所要用的功能<br>
-        3.点击进入<br><br>
+        <h3>welcome to ApiTest</h3>
+        <br><br>
+{#    添加多行文本框#}
+        <textarea id="tucao_input"
+              cols="45"
+              rows="9"
+              placeholder="匿名吐槽专用，点击‘呸’ 即可怒喷开发者！"
+              style="border-radius: 5px;padding-left: 10px;box-shadow: 4px 4px 9px grey"></textarea>
+        <br><br>
+        <button id="tc_btn" onclick="pei()" style="border-radius: 5px;background-color: #398e73;color: white" >呸!</button>
+{#    <div style="border:2px solid black;width:200px;text-align: left;#}
+{#    margin-left: -webkit-calc(50% - 100px);padding-left: 10px">#}
+{#        <h2>如何使用：</h2>#}
+{#        1.打开左侧菜单<br>#}
+{#        2.找到所要用的功能<br>#}
+{#        3.点击进入<br><br>#}
+{#    </div>#}
+
+        <br><br>
+        <img src="../static/logo.png" alt="图片找不到了。。。" style="width: 400px;">
     </div>
 
-    <br><br>
-    <img src="../static/logo.png" alt="图片找不到了。。。" style="width: 400px;">
+    <script>
+        function pei() {
+            $get("/pei/",{
+                "tc_text":document.getElementById("tucao_input").value
+            },function (ret) {
+                alert("吐槽成功！")
+                
+            })
 
 
-    </div>
+        }
+    </script>
+
 
 
 </body>

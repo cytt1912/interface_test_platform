@@ -73,4 +73,9 @@ def logout(request):
     auth.logout(request)
     return HttpResponseRedirect('/login/')
 
+#吐槽
+def pei(request):
+    tc_text= request.GET('tc_text')
+    return HttpResponse()
+
 
