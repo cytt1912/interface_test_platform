@@ -83,4 +83,8 @@ def pei(request):
     DBComments.objects.create(user = request.user.username,text=tc_text)
     return HttpResponse('')
 
+def api_help(request):
+    return render(request, 'welcome.html', {"whichHTML": "help.html", "oid": ""})
+
+
 

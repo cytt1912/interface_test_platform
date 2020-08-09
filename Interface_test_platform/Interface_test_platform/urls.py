@@ -30,6 +30,7 @@ urlpatterns = [
     url('account/login/',login), #非登录状态需要先进入登录页面
     path('logout/',logout),
     path('pei/',pei),
+    path('help/',api_help),
 
 
 ]
