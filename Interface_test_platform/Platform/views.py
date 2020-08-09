@@ -28,7 +28,8 @@ def home(request):
     return render(request, 'welcome.html', {"whichHTML": "home.html", "oid": ""})
 
 def child(request,eid,oid):
-    return render(request,eid)
+    res = child_json(eid)
+    return render(request,eid,res)
 
 def login_action(request):
     uname = request.GET['username']
@@ -85,6 +86,14 @@ def pei(request):
 
 def api_help(request):
     return render(request, 'welcome.html', {"whichHTML": "help.html", "oid": ""})
+
+#控制不同的页面返回不同的数据：数据分发器
+def child_json(eid):
+    if eid == "home.html":
+        data = DB_home_href.objects.all()
+        res = {"hrefs":data}
+        return res
+
 
 
 
